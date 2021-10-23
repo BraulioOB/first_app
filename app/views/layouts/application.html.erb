@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container">
+        <div class="nav navbar-nav">
+          <%= link_to "Home" , "/" , class: "nav-item nav-link" %>
+            <%= link_to "Two" , "/pages/two" , class: "nav-item nav-link" %>
+              <%= link_to "Three" , "/pages/three" , class: "nav-item nav-link" %>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <%= yield %>
+    </div>
   </body>
 </html>
